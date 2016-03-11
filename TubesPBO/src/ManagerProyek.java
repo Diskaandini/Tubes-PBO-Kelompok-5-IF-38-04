@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package tubespbo;
 
 /**
  *
  * @author Lalu Oldi Alfitra
  */
-public class ManagerProyek extends Orang {
+public class ManagerProyek extends Orang{
+    
     private Proyek[] proyek = new Proyek[5];
     private String idMP;
     private String deadline;
@@ -44,11 +44,16 @@ public class ManagerProyek extends Orang {
             System.out.println("Proyek tidak dapat dihapus");
         }
     }
+    
+    /**
+     *
+     */
+    @Override
     public void Display() {
         System.out.println("ID Manager Proyek: "+getIdMP());
         System.out.println("Nama: " + super.getNama());
         System.out.println("Tanggal Lahir: " + super.getTanggalLahir());
-        System.out.println("No HP: " + super.getNpHP());
+        System.out.println("No HP: " + super.getNoHP());
         System.out.println("Jenis Kelamin: " + super.getJenisKelamin());
         System.out.println("Proyek: " + getProyek());
     }
